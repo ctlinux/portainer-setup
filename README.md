@@ -1,4 +1,4 @@
-# rpi-raspbian-config
-Configuration for RPi 4 devices running Raspbian
+# portainer-setup
+Portainer for Debian/Raspbian 
 
-This repository was created to demonstrate how to preconfigure a raspberry pi device for my network.  The goal is to simply install some base packages such as Docker, and then Portainer for now.
+This repository was created to demonstrate how to preconfigure a Debian system (PC or raspberry pi) with Docker and Portainer.
