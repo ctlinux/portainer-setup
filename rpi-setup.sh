@@ -1,4 +1,3 @@
-  GNU nano 7.2                                                                                                                                           docker-setup.sh                                                                                                                                                    
 #!/bin/bash
 
 ### Script for configuration of Docker and Portainer for Debian-based systems (Debian, Ubuntu, Raspbian) ###
