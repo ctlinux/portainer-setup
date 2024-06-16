@@ -13,7 +13,7 @@ apt install -y vim git gpg apt-transport-https ca-certificates curl software-pro
 sleep 2
 
 # Install Tailscale
-echo "Installing Tailscale
+echo "Installing Tailscale"
 sleep 2
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg > /dev/null
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
