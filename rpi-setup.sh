@@ -1,9 +1,10 @@
 #!/bin/bash
 
 ### Script for configuration of Docker and Portainer for Debian-based systems (Debian, Ubuntu, Raspbian) ###
-### This script must be run as root ###
-
 # REF:https://docs.docker.com/engine/install/debian/#install-using-the-repository 
+
+# Ensure script is run as root
+if [ "$(id -u)" -ne 0 ]; then echo "Please run as root." >&2; exit 1; fi
 
 # Install pre-requisite packages
 echo "Installing required packages"
