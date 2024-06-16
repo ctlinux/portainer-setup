@@ -6,10 +6,19 @@
 
 # REF:https://docs.docker.com/engine/install/debian/#install-using-the-repository 
 
-# Install required packages
+# Install pre-requisite packages
 echo "Installing required packages"
 sleep 2
-apt install -y vim gpg apt-transport-https ca-certificates curl software-properties-common
+apt install -y vim git gpg apt-transport-https ca-certificates curl software-properties-common
+sleep 2
+
+# Install Tailscale
+echo "Installing Tailscale
+sleep 2
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg > /dev/null
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+apt-get install tailscale
+tailscale up
 sleep 2
 
 # Add Docker's official GPG key:
